@@ -1,0 +1,5 @@
+### GET request to example server
+GET http://localhost:8080
+# io.netty.handler.ssl.NotSslRecordException: not an SSL/TLS record:
+# error fix by removing letter 's' from https, now listening to the port 8080
+###

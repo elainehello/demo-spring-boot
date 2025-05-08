@@ -1,0 +1,29 @@
+# Step-by-step guide to setting up JDK installations in ~/.jdks directory
+# Eclipse Temurin JDK/JRE Hotspot, check with version is suitable for your project
+# Prerequisites:
+# 1. Ensure SDKMAN is installed first (required for managing Java installations)
+# 2. Have proper internet connection for downloading JDK
+#
+# Installation Process:
+# 1. Create ~/.jdks directory if it doesn't exist, mkdir -p ~/.jdks
+# 2. Use SDKMAN to install desired JDK version
+# 3. Configure environment variables (JAVA_HOME and PATH)
+# 4. Verify installation
+#
+# Example usage:
+# 1. First install SDKMAN if needed:
+#    curl -fsSL https://sdkman.io/install | bash
+#
+# 2. Then install JDK (replace version as needed):
+#    sdk install java 21.0.7-tem
+#
+# 3. Set environment variables:
+#    export JAVA_HOME=~/.sdks/java/$(sdk current java)
+#    export PATH=$JAVA_HOME/bin:$PATH
+#
+# 4. Verify installation:
+#    java --version
+#    javac --version
+#
+# Note: SDKMAN installs JDKs in ~/.sdks/java/, but creates symlinks in ~/.jdks/
+#       Both directories serve different purposes in the Java ecosystem.
